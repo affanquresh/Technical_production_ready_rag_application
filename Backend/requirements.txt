@@ -5,6 +5,7 @@ pydantic
 langchain
 langchain-community
 langchain-groq
+langchain-huggingface
 
 chromadb
 

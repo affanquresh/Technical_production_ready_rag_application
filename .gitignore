@@ -10,10 +10,8 @@ master_rag_venv/
 # Env variables
 .env
 
-# Vector DB
-new_chroma_db/
-
-# Data files
+# RAG generated files
+Backend/new_chroma_db/
 *.pkl
 
 # Mac

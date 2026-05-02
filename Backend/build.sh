@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 pip install -r requirements.txt
-python build_index.py
+# python build_index.py

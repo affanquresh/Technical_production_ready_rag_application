@@ -1,0 +1,8 @@
+pandas
+sentence-transformers
+scikit-learn
+rank_bm25
+sentence-transformers
+langchain
+langchain-community
+chromadb

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+master_rag_venv/
+
+# Env variables
+.env
+
+# Vector DB
+new_chroma_db/
+
+# Data files
+*.pkl
+
+# Mac
+.DS_Store

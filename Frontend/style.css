@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: #020617;
+    padding: 15px;
+    border-right: 1px solid #1e293b;
+  }
+  
+  .sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .new-chat {
+    background: #2563eb;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  /* Main */
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    padding: 15px;
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #chat {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Messages */
+  .msg {
+    display: flex;
+    margin-bottom: 15px;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .bubble {
+    max-width: 70%;
+    padding: 12px;
+    border-radius: 10px;
+    line-height: 1.6;
+  }
+  
+  .user {
+    justify-content: flex-end;
+  }
+  
+  .user .bubble {
+    background: #2563eb;
+  }
+  
+  .bot {
+    justify-content: flex-start;
+  }
+  
+  .bot .bubble {
+    background: #1e293b;
+  }
+  
+  /* Input */
+  .input-box {
+    display: flex;
+    padding: 15px;
+    background: #020617;
+    border-top: 1px solid #1e293b;
+  }
+  
+  input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #1e293b;
+    color: white;
+  }
+  
+  button {
+    margin-left: 10px;
+    padding: 12px 18px;
+    background: #22c55e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background: #16a34a;
+  }
+  
+  /* Typing animation */
+  .typing {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .dot {
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    animation: bounce 1.2s infinite;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

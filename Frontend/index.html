@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technical RAG Assistant</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>RAG Assistant</h2>
+  <div class="new-chat" onclick="newChat()">+ New Chat</div>
+  <div>
+    <ul > some sample questions for testing:
+      <li> Q1: How to reset DHCP on Windows?<br></li>
+    <li>Q2: What about mac?</li> 
+   <li> Q3: What if it still doesn’t work?</li>
+   <li>Q4:How do you assign a static IP address to a network fax machine?</li>
+   <li>Q5:How do you configure display settings after connecting a monitor?</li>
+  </ul>
+ 
+</div>
+</div>
+
+<!-- Main -->
+<div class="main">
+  <header>💬 Technical Hybrid RAG Chat</header>
+
+  <div id="chat"></div>
+
+  <div class="input-box">
+    <input id="query" placeholder="Ask anything..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

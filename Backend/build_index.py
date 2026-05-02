@@ -7,7 +7,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from rank_bm25 import BM25Okapi
 
 # ---- CONFIG ----
-DATA_PATH = "/Users/affanqureshi/Desktop/affan/Production_ready_RAG_application/synthetic_knowledge_items.csv"
+DATA_PATH = "../synthetic_knowledge_items.csv"
 CHROMA_PATH = "chroma_db_final"
 
 # ---- Chunking Function ----

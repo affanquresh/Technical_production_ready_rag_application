@@ -51,7 +51,7 @@ async function sendMessage() {
   const typingMsg = showTyping();
 
   try {
-    const res = await fetch("https://render.com/docs/web-services#port-binding", {
+    const res = await fetch("http://127.0.0.1:8000/ask", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

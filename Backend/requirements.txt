@@ -1,3 +1,7 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch==2.2.2+cpu
+
 fastapi
 uvicorn
 pydantic
@@ -5,12 +9,9 @@ pydantic
 langchain
 langchain-community
 langchain-groq
-langchain-huggingface
 
 chromadb
-
 sentence-transformers
-
 rank-bm25
 
 pandas
